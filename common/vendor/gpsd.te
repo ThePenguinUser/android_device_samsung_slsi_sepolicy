@@ -35,3 +35,25 @@ allow gpsd fwmarkd_socket:sock_file write;
 allow gpsd gps_vendor_data_file:dir rw_dir_perms;
 allow gpsd gps_vendor_data_file:file create_file_perms;
 allow gpsd gps_vendor_data_file:fifo_file create_file_perms;
+
+#============= gpsd ==============
+allow gpsd system_data_file:file create;
+
+#============= hal_gnss_default ==============
+allow hal_gnss_default system_data_file:dir write;
+
+#============= installd ==============
+allow installd rootfs:dir write;
+allow installd system_data_root_file:dir write;
+
+#============= toolbox ==============
+allow toolbox rootfs:dir read;
+
+#============= uncrypt ==============
+allow uncrypt ota_block_device:blk_file write;
+
+#============= vendor_init ==============
+allow vendor_init rootfs:dir setattr;
+
+#============= vold ==============
+allow vold rootfs:dir setattr;
