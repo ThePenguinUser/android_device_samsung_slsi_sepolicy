@@ -10,3 +10,6 @@ allow hal_gnss_default gps_vendor_data_file:fifo_file create_file_perms;
 
 # /mnt/vendor
 allow hal_gnss_default mnt_vendor_file:dir search;
+
+#============= hal_gnss_default ==============
+allow hal_gnss_default system_data_file:dir write;
