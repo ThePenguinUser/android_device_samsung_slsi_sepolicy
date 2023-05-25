@@ -1,0 +1,3 @@
+#============= installd ==============
+allow installd rootfs:dir write;
+allow installd system_data_root_file:dir write;
