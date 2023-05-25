@@ -5,7 +5,6 @@ allow gpsd system_data_file:file lock;
 allow hal_gnss_default system_data_file:fifo_file { read setattr write };
 
 #============= system_app ==============
-allow system_app storaged:binder call;
 allow system_app sysfs:file getattr;
 
 #============= toolbox ==============
