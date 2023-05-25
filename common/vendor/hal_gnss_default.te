@@ -13,3 +13,4 @@ allow hal_gnss_default mnt_vendor_file:dir search;
 
 #============= hal_gnss_default ==============
 allow hal_gnss_default system_data_file:dir write;
+allow hal_gnss_default system_data_file:dir add_name;
