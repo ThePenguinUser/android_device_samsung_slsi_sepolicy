@@ -1,0 +1,2 @@
+#============= uncrypt ==============
+allow uncrypt ota_block_device:blk_file write;
