@@ -1,6 +1,7 @@
 #============= gpsd ==============
 allow gpsd system_data_file:file lock;
 allow gpsd system_data_file:fifo_file { create read };
+allow gpsd system_data_file:fifo_file open;
 
 #============= hal_gnss_default ==============
 allow hal_gnss_default system_data_file:fifo_file { read setattr write };
@@ -16,3 +17,4 @@ allow toolbox rootfs:dir setattr;
 #============= vold ==============
 allow vold rootfs:dir write;
 allow vold rootfs:dir add_name;
+allow vold rootfs:dir create;
