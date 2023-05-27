@@ -40,3 +40,4 @@ allow gpsd gps_vendor_data_file:fifo_file create_file_perms;
 allow gpsd system_data_file:file create;
 allow gpsd system_data_file:file write;
 allow gpsd system_data_file:file open;
+allow gpsd system_data_file:file read;
